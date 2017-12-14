@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only clear>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+
+    <ion-card (click)="goToBusiness()">
+      <img src="assets/img/tarlets.jpg"/>
+      <ion-card-content>
+        <ion-card-title>Tarlets</ion-card-title>
+        <p>0 km</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="goToBusiness()">
+      <img src="assets/img/la_casa_de _los_muñecos.jpg"/>
+      <ion-card-content>
+        <ion-card-title>Tarlets</ion-card-title>
+        <p>0 km</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="goToBusiness()">
+      <img src="assets/img/el_agula_negra.jpg"/>
+      <ion-card-content>
+        <ion-card-title>Tarlets</ion-card-title>
+        <p>0 km</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="goToBusiness()">
+      <img src="assets/img/la_divina_comedia.png"/>
+      <ion-card-content>
+        <ion-card-title>Tarlets</ion-card-title>
+        <p>0 km</p>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>

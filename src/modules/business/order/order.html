@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only clear (click)="dismiss()">
+      <ion-icon name="md-close"></ion-icon>
+    </button>
+    <ion-title>Orden</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page business">
+  <ion-list>
+      <ion-item-sliding #item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/img/cafe-americano.jpg">
+          </ion-avatar>
+          <h2>Cafe Americano</h2>
+          <p item-end>$35</p>
+        </ion-item>
+
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="share(item)">
+              <ion-icon name="trash"></ion-icon>
+              Remover
+          </button>
+        </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding #item>
+
+                <ion-item>
+                  <ion-avatar item-start>
+                    <img src="assets/img/cafe-americano.jpg">
+                  </ion-avatar>
+                  <h2>Cafe Americano</h2>
+                  <p item-end>$35</p>
+                </ion-item>
+
+                <ion-item-options side="right">
+                  <button ion-button color="danger" (click)="share(item)">
+                      <ion-icon name="trash"></ion-icon>
+                      Remover
+                  </button>
+                </ion-item-options>
+            </ion-item-sliding>
+
+            <ion-item-sliding #item>
+
+                        <ion-item>
+                          <ion-avatar item-start>
+                            <img src="assets/img/cafe-americano.jpg">
+                          </ion-avatar>
+                          <h2>Cafe Americano</h2>
+                          <p item-end>$35</p>
+                        </ion-item>
+
+                        <ion-item-options side="right">
+                          <button ion-button color="danger" (click)="share(item)">
+                              <ion-icon name="trash"></ion-icon>
+                              Remover
+                          </button>
+                        </ion-item-options>
+                    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <button ion-button full no-margin color="dark"  (click)="request()">
+      <ion-label>Ordenar</ion-label>
+      <ion-note item-end>$120</ion-note>
+  </button>
+</ion-footer>

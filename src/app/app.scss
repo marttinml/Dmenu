@@ -1,16 +1,71 @@
-// http://ionicframework.com/docs/theming/
+// .dmenu-item-input{
+//   padding-left: 0px;
+// }
+// .dmenu-item-input.item-block > .item-inner{
+//   padding-right: 0;
+//   border-bottom: 1px solid rgb(0,0,0);
+// }
+
+// .dmenu-item-input.item-block > .item-inner ion-label{
+//   padding-left: 10px;
+//   color: rgb(102,102,102);
+// }
+
+// .dmenu-item-input.item-block > .item-inner ion-input{
+// // background-color: rgba(0,0,0,.05);
+// }
+// ion-navbar{
+//   height: 53px;
+// }
+// ion-navbar .back-button-text,
+// ion-nav .back-button-text{
+//   display: none;
+// }
+// ion-nav button-effect{
+//   color: #222;
+// }
+
+// .button-ios-dark .button-inner{
+//   color: rgb(36,211,154);
+// }
+// ion-header > ion-navbar > button,
+// ion-header > ion-navbar > div > button
+// {
+//   color: rgb(36,211,154)!important;
+// }
 
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+
+// ion-img{
+//   background-color: transparent;
+// }
+
+
+// ion-card.full-ion-card{
+//     position: relative;
+//     margin-top: 0;
+//     margin-right: 0;
+//     margin-left: 0;
+//     width: 100%;
+//   }
+
+ion-header{
+  background-color:#f8f8f8;
+}
+ion-navbar{
+  margin-top: 10px;
+  height: 61px;
+}
+h1.wellcome-name:first-child{
+  margin: 160px auto 110px auto;
+}
+
+  .nav-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+  }
+
+

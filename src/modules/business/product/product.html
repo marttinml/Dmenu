@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only clear (click)="dismiss()">
+      <ion-icon name="md-close"></ion-icon>
+    </button>
+    <ion-title>Tarlets</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card class="full-ion-card">
+      <img src="assets/img/cafe-americano.jpg"/>
+      <ion-card-content>
+        <ion-card-title>
+          Cafe Americano
+          </ion-card-title>
+        <p>
+          The most popular industrial group ever, and largely
+          responsible for bringing the music to a mass audience.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+<ion-card>
+    <ion-card-header>
+        Tamaño
+      </ion-card-header>
+    <ion-card-content>
+      <ion-list radio-group [(ngModel)]="relationship">
+          <ion-item>
+            <ion-label>Chico</ion-label>
+            <ion-radio value="friends" checked color="secondary"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Mediano</ion-label>
+            <ion-radio value="family" color="secondary"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Grande</ion-label>
+            <ion-radio value="enemies" [disabled]="isDisabled" color="secondary"></ion-radio>
+          </ion-item>
+        </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-header>
+          Nota
+        </ion-card-header>
+      <ion-card-content>
+          <ion-textarea placeholder="Con aguacate ?"></ion-textarea>
+    </ion-card-content>
+  </ion-card>
+
+<ion-card-title text-center>
+    <button ion-button round outline text-center>-</button>
+    <b margin padding-top>1</b>
+    <button ion-button round outline text-center>+</button>
+</ion-card-title>
+
+</ion-content>
+
+<ion-footer>
+    <button ion-button full no-margin color="dark"  (click)="add()">
+        Agregar
+    </button>
+</ion-footer>
